@@ -16,7 +16,7 @@ app = FastAPI()
 # Allow CORS requests from your React app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React's port
+    allow_origins=["https://66fd5c10f77d7b0c45163fa3--jocular-gumdrop-752e3b.netlify.app"],  # React's port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -53,8 +53,7 @@ Always ensure that your responses are filled with empathy, encouragement, and th
 async def read_root():
     return {"message": "Welcome to the chatbot! Use the /chatbot endpoint to interact with me."}
 
-def isHallucination(text):
-    pass
+
 
 @app.get("/chatbot")
 async def chatbot_get(user_message: str):
