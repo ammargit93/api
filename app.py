@@ -16,7 +16,7 @@ app = FastAPI()
 # Allow CORS requests from your React app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://66fd3d0e65050fe2010a9708--jocular-gumdrop-752e3b.netlify.app/"],  # React's port
+    allow_origins=["https://66fd5c10f77d7b0c45163fa3--jocular-gumdrop-752e3b.netlify.app"],  # React's port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
